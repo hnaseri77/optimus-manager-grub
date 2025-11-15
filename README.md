@@ -4,9 +4,9 @@ GRUB2 mkconfig script for creating [optimus-manager](https://github.com/Askannz/
 
 ## Usage
 
-1. Clone this repository and cd into it: `git clone https://github.com/hakasapl/optimus-manager-grub.git && cd optimus-manager-grub`
+1. Clone this repository and cd into it: `git clone https://github.com/hnaseri77/optimus-manager-grub.git && cd optimus-manager-grub`
 1. Run the install script as root: `sudo ./install.sh`
-1. Update your grub configuration using `grub-mkconfig` or `update-grub` if your distribution has that
+1. Update your grub configuration using `sudo grub-mkconfig -o /boot/grub/grub.cfg` or `sudo grub-update`
 
 ### Install Script Arguments
 
@@ -16,6 +16,8 @@ GRUB2 mkconfig script for creating [optimus-manager](https://github.com/Askannz/
 | `--disable-hybrid`     | Don't create a boot option for hybrid mode                                               |
 | `--disable-nvidia`     | Don't create a boot option for nvidia mode                                               |
 | `--uninstall`          | Uninstall this generator script (You still need to update grub configuration afterwards) |
+
+For example 'sudo ./install.sh --disable-integrated'
 
 ## Icons for Optimus Boot Options
 
