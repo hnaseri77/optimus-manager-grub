@@ -17,7 +17,7 @@ GRUB2 mkconfig script for creating [optimus-manager](https://github.com/Askannz/
 | `--disable-nvidia`     | Don't create a boot option for nvidia mode                                               |
 | `--uninstall`          | Uninstall this generator script (You still need to update grub configuration afterwards) |
 
-1. For example 'sudo ./install.sh --disable-integrated'
+1. For example `sudo ./install.sh --disable-integrated`
 
 ## Icons for Optimus Boot Options
 
